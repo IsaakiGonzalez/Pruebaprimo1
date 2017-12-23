@@ -15,12 +15,8 @@ int main(){
 }
 
 bool sumaPrimo(int x,int y){
-	if(esPrimo(x+y)){
-		return true;
-	}
-	else{
-		return false;
-	}
+	if(esPrimo(x+y)) return true;
+	else return false;
 }
 
 bool esPrimo(int num){
