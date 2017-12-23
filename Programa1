@@ -1,0 +1,42 @@
+//Prueba Suma de numeros primos
+#include<iostream>
+using namespace std;
+bool sumaPrimo(int x,int y);
+bool esPrimo(int num);
+int main(){
+	int a,b;
+	
+	cout<<"introduzca dos numeros"<<endl;
+	cin>>a>>b;
+	cout<<"la suma de los dos numeros es"<<sumaPrimo<<endl;
+	return 0;
+}
+
+bool sumaPrimo(int x,int y){
+	if((x+y)== esPrimoº){
+		return true;
+	}
+	else{
+		return false;
+	}
+}
+
+bool EsPrimo(int num){
+  int contador=0;
+  if (num%2==0){//comprueba si num es par
+    return false;
+  }
+  else{
+    for(int i=1;i<=num;i++){//comprueba los numeros que son divisibles desde el 1 hasta el mismo
+      if (num%i==0){
+        contador++;
+      }
+    }
+    if (contador == 2){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
+}
