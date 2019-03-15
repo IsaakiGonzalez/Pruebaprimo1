@@ -23,6 +23,6 @@ bool esPrimo(int num){
 	int contador = 0;
 	for(int i=1;i<(num+1);i++)
 		if(num%i==0) contador++;
-	if(contador!=2) return 0;
-	else return 1;
+	if(contador!=2) return false;
+	else return true;
 }
